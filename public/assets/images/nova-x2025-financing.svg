@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#1a1a1a"/>
+  <defs>
+    <linearGradient id="financeGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4af37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c9a961;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Tarjeta de financiamiento -->
+  <rect x="100" y="50" width="600" height="300" rx="20" fill="#2c2c2c"/>
+  <rect x="110" y="60" width="580" height="280" rx="15" fill="#333"/>
+  <!-- Header dorado -->
+  <rect x="110" y="60" width="580" height="60" rx="15" fill="url(#financeGoldGrad)"/>
+  <rect x="110" y="100" width="580" height="20" fill="url(#financeGoldGrad)"/>
+  <!-- Icono de auto -->
+  <circle cx="200" cy="180" r="40" fill="#d4af37" opacity="0.2"/>
+  <rect x="170" y="170" width="60" height="20" rx="10" fill="#d4af37"/>
+  <circle cx="180" cy="195" r="8" fill="#1a1a1a"/>
+  <circle cx="220" cy="195" r="8" fill="#1a1a1a"/>
+  <!-- Información de financiamiento -->
+  <rect x="280" y="150" width="200" height="40" rx="5" fill="#d4af37"/>
+  <rect x="280" y="210" width="300" height="30" rx="5" fill="#444"/>
+  <rect x="280" y="260" width="250" height="30" rx="5" fill="#444"/>
+  <!-- Porcentaje -->
+  <circle cx="650" cy="220" r="60" fill="none" stroke="#d4af37" stroke-width="8"/>
+  <circle cx="650" cy="220" r="60" fill="none" stroke="#444" stroke-width="8" stroke-dasharray="280 100" transform="rotate(-90 650 220)"/>
+  <!-- Estrellas -->
+  <polygon points="550,320 555,335 570,335 558,345 562,360 550,350 538,360 542,345 530,335 545,335" fill="#d4af37"/>
+  <polygon points="600,320 605,335 620,335 608,345 612,360 600,350 588,360 592,345 580,335 595,335" fill="#d4af37"/>
+  <polygon points="650,320 655,335 670,335 658,345 662,360 650,350 638,360 642,345 630,335 645,335" fill="#d4af37"/>
+</svg>

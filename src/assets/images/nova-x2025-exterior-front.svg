@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#2c3e50"/>
+  <defs>
+    <linearGradient id="frontCarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="100" y="200" width="600" height="120" rx="60" fill="url(#frontCarGrad)"/>
+  <circle cx="200" cy="350" r="30" fill="#34495e"/>
+  <circle cx="600" cy="350" r="30" fill="#34495e"/>
+  <text x="400" y="260" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Vista Frontal</text>
+  <text x="400" y="430" text-anchor="middle" fill="#d4af37" font-family="Arial, sans-serif" font-size="16">Diseño Aerodinámico</text>
+</svg>

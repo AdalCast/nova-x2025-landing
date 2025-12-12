@@ -1,0 +1,280 @@
+.financing {
+  background: var(--gradient-primary);
+  color: var(--text-light);
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+.section-title {
+  color: var(--text-light);
+  
+  &::after {
+    background: var(--gradient-secondary);
+  }
+}
+
+.section-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.financing-content {
+  position: relative;
+  z-index: 2;
+}
+
+.financing-highlight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xxl);
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xxl);
+  margin-bottom: var(--spacing-xxl);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    text-align: center;
+  }
+}
+
+.highlight-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 400;
+  margin-bottom: var(--spacing-sm);
+  opacity: 0.9;
+}
+
+.price-display {
+  margin-bottom: var(--spacing-md);
+  
+  .price-amount {
+    font-size: var(--font-size-6xl);
+    font-weight: 700;
+    background: var(--gradient-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    @media (max-width: 768px) {
+      font-size: var(--font-size-5xl);
+    }
+  }
+  
+  .price-period {
+    font-size: var(--font-size-xl);
+    opacity: 0.8;
+    margin-left: var(--spacing-sm);
+  }
+}
+
+.highlight-subtitle {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.9;
+}
+
+.highlight-features {
+  display: flex;
+  gap: var(--spacing-lg);
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .feature-item {
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    color: var(--secondary-color);
+  }
+}
+
+.highlight-image {
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+  }
+}
+
+.financing-plans {
+  margin-bottom: var(--spacing-xxl);
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}
+
+.plan-card {
+  background: var(--text-light);
+  color: var(--text-dark);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  position: relative;
+  transition: all var(--transition-normal);
+  border: 2px solid transparent;
+  
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-heavy);
+  }
+  
+  &.featured {
+    border-color: var(--secondary-color);
+    transform: scale(1.05);
+    
+    @media (max-width: 768px) {
+      transform: none;
+    }
+    
+    .plan-header {
+      background: var(--gradient-secondary);
+      color: var(--text-light);
+      margin: calc(-1 * var(--spacing-xl)) calc(-1 * var(--spacing-xl)) var(--spacing-lg);
+      padding: var(--spacing-lg) var(--spacing-xl);
+      border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    }
+  }
+}
+
+.plan-badge {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gradient-secondary);
+  color: var(--text-light);
+  padding: var(--spacing-xs) var(--spacing-lg);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.plan-name {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+.plan-price {
+  .amount {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    color: var(--secondary-color);
+  }
+  
+  .period {
+    font-size: var(--font-size-base);
+    color: var(--text-gray);
+  }
+}
+
+.plan-features {
+  margin-bottom: var(--spacing-xl);
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    
+    li {
+      padding: var(--spacing-sm) 0;
+      border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+      color: var(--text-gray);
+      
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.plan-button {
+  width: 100%;
+  justify-content: center;
+}
+
+.financing-benefits {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xxl);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.benefits-title {
+  color: var(--text-light);
+  margin-bottom: var(--spacing-xl);
+  font-size: var(--font-size-3xl);
+}
+
+.benefits-grid {
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+}
+
+.benefit-item {
+  .benefit-icon {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  h4 {
+    color: var(--text-light);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+  }
+}
+
+// Animaciones escalonadas para los planes
+.plan-card {
+  &:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  &:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  &:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+}

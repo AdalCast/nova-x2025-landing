@@ -1,0 +1,103 @@
+<!-- Gallery Section -->
+<section id="gallery" class="gallery py-5">
+  <div class="container">
+    <div class="section-header text-center mb-5">
+      <h2 class="section-title fade-in-up">Galería Visual</h2>
+      <p class="section-subtitle fade-in-up">Descubre cada detalle del Nova X-2025</p>
+    </div>
+    
+    <div class="gallery-grid">
+      <!-- Imagen principal -->
+      <div class="gallery-main fade-in-up">
+        <img 
+          src="assets/images/nova-x2025-exterior-front.png" 
+          alt="Nova X-2025 vista frontal"
+          class="gallery-image main-image"
+          (click)="openModal('assets/images/nova-x2025-exterior-front.png', 'Vista frontal del Nova X-2025')">
+        <div class="image-overlay">
+          <h3>Vista Frontal</h3>
+          <p>Diseño agresivo y elegante</p>
+        </div>
+      </div>
+      
+      <!-- Grid de imágenes secundarias -->
+      <div class="gallery-secondary">
+        <div class="gallery-item fade-in-up" style="animation-delay: 0.2s">
+          <img 
+            src="assets/images/nova-x2025-exterior-rear.png" 
+            alt="Nova X-2025 vista trasera"
+            class="gallery-image"
+            (click)="openModal('assets/images/nova-x2025-exterior-rear.png', 'Vista trasera del Nova X-2025')">
+          <div class="image-overlay">
+            <h4>Vista Trasera</h4>
+            <p>Líneas deportivas</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item fade-in-up" style="animation-delay: 0.3s">
+          <img 
+            src="assets/images/nova-x2025-interior-dashboard.png" 
+            alt="Nova X-2025 tablero interior"
+            class="gallery-image"
+            (click)="openModal('assets/images/nova-x2025-interior-dashboard.png', 'Tablero del Nova X-2025')">
+          <div class="image-overlay">
+            <h4>Tablero</h4>
+            <p>Tecnología avanzada</p>
+          </div>
+        </div>
+        
+        <div class="gallery-item fade-in-up" style="animation-delay: 0.4s">
+          <img 
+            src="assets/images/nova-x2025-interior-seats.png" 
+            alt="Nova X-2025 asientos de piel"
+            class="gallery-image"
+            (click)="openModal('assets/images/nova-x2025-interior-seats.png', 'Asientos de piel del Nova X-2025')">
+          <div class="image-overlay">
+            <h4>Asientos de Piel</h4>
+            <p>Comodidad premium</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Features visuales -->
+    <div class="visual-features mt-5">
+      <div class="features-row">
+        <div class="visual-feature">
+          <div class="feature-icon">🎨</div>
+          <div class="feature-info">
+            <h4>Diseño Exclusivo</h4>
+            <p>Líneas aerodinámicas y acabados premium</p>
+          </div>
+        </div>
+        
+        <div class="visual-feature">
+          <div class="feature-icon">💎</div>
+          <div class="feature-info">
+            <h4>Materiales Premium</h4>
+            <p>Piel genuina y fibra de carbono</p>
+          </div>
+        </div>
+        
+        <div class="visual-feature">
+          <div class="feature-icon">🌟</div>
+          <div class="feature-info">
+            <h4>Iluminación LED</h4>
+            <p>Sistema completo de luces inteligentes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal para vista ampliada -->
+<div class="modal-overlay" [class.active]="isModalOpen" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <button class="modal-close" (click)="closeModal()">×</button>
+    <img [src]="'assets/images/' + modalImage" [alt]="modalAlt" class="modal-image">
+    <div class="modal-caption">
+      <h3>{{ modalAlt }}</h3>
+    </div>
+  </div>
+</div>

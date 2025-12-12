@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#1a1a1a"/>
+  <rect x="50" y="100" width="700" height="300" rx="20" fill="#2c3e50"/>
+  <rect x="100" y="150" width="300" height="150" rx="10" fill="#000000"/>
+  <rect x="450" y="180" width="80" height="40" fill="#d4af37"/>
+  <rect x="550" y="180" width="80" height="40" fill="#d4af37"/>
+  <rect x="650" y="180" width="80" height="40" fill="#d4af37"/>
+  <circle cx="600" cy="350" r="40" fill="#34495e"/>
+  <text x="250" y="230" text-anchor="middle" fill="#d4af37" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Pantalla 12"</text>
+  <text x="400" y="450" text-anchor="middle" fill="#d4af37" font-family="Arial, sans-serif" font-size="16">Tablero Digital Avanzado</text>
+</svg>

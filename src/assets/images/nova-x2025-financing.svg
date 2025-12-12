@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#f8f9fa"/>
+  <defs>
+    <linearGradient id="financeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="100" y="100" width="600" height="200" rx="20" fill="url(#financeGrad)"/>
+  <text x="400" y="180" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="32" font-weight="bold">$3,500/mes</text>
+  <text x="400" y="220" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="18">Financiamiento Preferencial</text>
+  <text x="400" y="250" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="14">Tasa 9% anual - Sin enganche</text>
+</svg>

@@ -1,0 +1,192 @@
+<!-- Contact Form Section -->
+<section id="contact" class="contact-form py-5">
+  <div class="container">
+    <div class="contact-content">
+      <!-- Header -->
+      <div class="contact-header text-center mb-5">
+        <h2 class="section-title fade-in-up">¿Listo para sentir la potencia?</h2>
+        <p class="section-subtitle fade-in-up">
+          Completa el formulario y un asesor especializado se pondrá en contacto contigo
+        </p>
+      </div>
+      
+      <!-- Form and Info Grid -->
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="form-container fade-in-up">
+          <form class="contact-form-element" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">Nombre *</label>
+                <input 
+                  type="text" 
+                  id="firstName" 
+                  name="firstName"
+                  class="form-control"
+                  [(ngModel)]="formData.firstName"
+                  required
+                  placeholder="Tu nombre">
+              </div>
+              
+              <div class="form-group">
+                <label for="lastName">Apellidos *</label>
+                <input 
+                  type="text" 
+                  id="lastName" 
+                  name="lastName"
+                  class="form-control"
+                  [(ngModel)]="formData.lastName"
+                  required
+                  placeholder="Tus apellidos">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email"
+                  class="form-control"
+                  [(ngModel)]="formData.email"
+                  required
+                  placeholder="tu@email.com">
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Teléfono *</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone"
+                  class="form-control"
+                  [(ngModel)]="formData.phone"
+                  required
+                  placeholder="(55) 1234-5678">
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="interest">Interés Principal</label>
+              <select 
+                id="interest" 
+                name="interest"
+                class="form-control"
+                [(ngModel)]="formData.interest">
+                <option value="">Selecciona una opción</option>
+                <option value="test-drive">Prueba de manejo</option>
+                <option value="quote">Solicitar cotización</option>
+                <option value="financing">Información de financiamiento</option>
+                <option value="specs">Especificaciones técnicas</option>
+                <option value="other">Otro</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Mensaje (Opcional)</label>
+              <textarea 
+                id="message" 
+                name="message"
+                class="form-control"
+                rows="4"
+                [(ngModel)]="formData.message"
+                placeholder="Cuéntanos más sobre lo que necesitas..."></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input 
+                  type="checkbox" 
+                  name="acceptTerms"
+                  [(ngModel)]="formData.acceptTerms"
+                  required>
+                <span class="checkmark"></span>
+                Acepto los <a href="#" target="_blank">términos y condiciones</a> y la <a href="#" target="_blank">política de privacidad</a>
+              </label>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input 
+                  type="checkbox" 
+                  name="acceptMarketing"
+                  [(ngModel)]="formData.acceptMarketing">
+                <span class="checkmark"></span>
+                Acepto recibir información comercial de Nova Motors
+              </label>
+            </div>
+            
+            <button 
+              type="submit" 
+              class="btn btn-primary btn-lg form-submit"
+              [disabled]="!contactForm.form.valid || isSubmitting">
+              <span *ngIf="!isSubmitting">Solicitar Cotización</span>
+              <span *ngIf="isSubmitting">Enviando...</span>
+            </button>
+          </form>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="contact-info slide-in-right">
+          <h3>Contáctanos Directamente</h3>
+          
+          <div class="info-item">
+            <div class="info-icon">📞</div>
+            <div class="info-content">
+              <h4>Teléfono</h4>
+              <p><a href="tel:+525555123456">(55) 5512-3456</a></p>
+              <small>Lunes a Viernes 9:00 - 18:00</small>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">📧</div>
+            <div class="info-content">
+              <h4>Email</h4>
+              <p><a href="mailto:ventas@novamotors.com">ventas&#64;novamotors.com</a></p>
+              <small>Respuesta en 24 horas</small>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-content">
+              <h4>Showroom</h4>
+              <p>Av. Reforma 123, Col. Centro<br>Ciudad de México, CP 06000</p>
+              <small>Lunes a Sábado 9:00 - 19:00</small>
+            </div>
+          </div>
+          
+          <div class="info-item">
+            <div class="info-icon">🚗</div>
+            <div class="info-content">
+              <h4>Prueba de Manejo</h4>
+              <p>Agenda una cita para probar el Nova X-2025</p>
+              <small>Con previa cita</small>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <h4>Síguenos</h4>
+            <div class="social-buttons">
+              <a href="#" class="social-btn facebook">Facebook</a>
+              <a href="#" class="social-btn instagram">Instagram</a>
+              <a href="#" class="social-btn youtube">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Success Message -->
+  <div class="success-overlay" [class.active]="showSuccess">
+    <div class="success-message">
+      <div class="success-icon">✓</div>
+      <h3>¡Mensaje Enviado!</h3>
+      <p>Gracias por tu interés. Un asesor se pondrá en contacto contigo pronto.</p>
+      <button class="btn btn-primary" (click)="hideSuccess()">Cerrar</button>
+    </div>
+  </div>
+</section>

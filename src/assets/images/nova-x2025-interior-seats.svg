@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#2c3e50"/>
+  <rect x="100" y="150" width="150" height="200" rx="20" fill="#8b4513"/>
+  <rect x="300" y="150" width="150" height="200" rx="20" fill="#8b4513"/>
+  <rect x="500" y="150" width="150" height="200" rx="20" fill="#8b4513"/>
+  <rect x="120" y="170" width="110" height="160" rx="10" fill="#a0522d"/>
+  <rect x="320" y="170" width="110" height="160" rx="10" fill="#a0522d"/>
+  <rect x="520" y="170" width="110" height="160" rx="10" fill="#a0522d"/>
+  <text x="400" y="400" text-anchor="middle" fill="#d4af37" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Asientos de Piel Premium</text>
+  <text x="400" y="430" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="14">Comodidad y Lujo</text>
+</svg>

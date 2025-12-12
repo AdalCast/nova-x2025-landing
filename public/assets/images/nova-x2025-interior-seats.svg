@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#1a1a1a"/>
+  <defs>
+    <linearGradient id="leatherGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b4513;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a0522d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b4513;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="seatShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#654321;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Fondo interior -->
+  <rect x="0" y="0" width="800" height="500" fill="#2c2c2c"/>
+  <!-- Asiento conductor -->
+  <rect x="80" y="100" width="180" height="280" rx="20" fill="url(#seatShadow)"/>
+  <rect x="90" y="110" width="160" height="260" rx="15" fill="url(#leatherGrad)"/>
+  <!-- Costuras asiento conductor -->
+  <line x1="130" y1="120" x2="130" y2="360" stroke="#d4af37" stroke-width="2" stroke-dasharray="10,5"/>
+  <line x1="170" y1="120" x2="170" y2="360" stroke="#d4af37" stroke-width="2" stroke-dasharray="10,5"/>
+  <line x1="210" y1="120" x2="210" y2="360" stroke="#d4af37" stroke-width="2" stroke-dasharray="10,5"/>
+  <!-- Reposacabezas conductor -->
+  <rect x="110" y="60" width="120" height="50" rx="10" fill="url(#leatherGrad)"/>
+  <!-- Asiento pasajero -->
+  <rect x="540" y="100" width="180" height="280" rx="20" fill="url(#seatShadow)"/>
+  <rect x="550" y="110" width="160" height="260" rx="15" fill="url(#leatherGrad)"/>
+  <!-- Costuras asiento pasajero -->
+  <line x1="590" y1="120" x2="590" y2="360" stroke="#d4af37" stroke-width="2" stroke-dasharray="10,5"/>
+  <line x1="630" y1="120" x2="630" y2="360" stroke="#d4af37" stroke-width="2" stroke-dasharray="10,5"/>
+  <line x1="670" y1="120" x2="670" y2="360" stroke="#d4af37" stroke-width="2" stroke-dasharray="10,5"/>
+  <!-- Reposacabezas pasajero -->
+  <rect x="570" y="60" width="120" height="50" rx="10" fill="url(#leatherGrad)"/>
+  <!-- Consola central -->
+  <rect x="300" y="150" width="200" height="250" rx="15" fill="#1a1a1a"/>
+  <rect x="310" y="160" width="180" height="80" rx="10" fill="#2c2c2c"/>
+  <!-- Portavasos -->
+  <circle cx="350" cy="300" r="25" fill="#333"/>
+  <circle cx="350" cy="300" r="20" fill="#1a1a1a"/>
+  <circle cx="450" cy="300" r="25" fill="#333"/>
+  <circle cx="450" cy="300" r="20" fill="#1a1a1a"/>
+  <!-- Palanca de cambios -->
+  <rect x="370" y="340" width="60" height="40" rx="10" fill="#333"/>
+  <ellipse cx="400" cy="350" rx="20" ry="15" fill="url(#leatherGrad)"/>
+  <!-- Controles climatización -->
+  <rect x="320" y="170" width="160" height="60" rx="8" fill="#0a2540"/>
+  <text x="400" y="205" text-anchor="middle" fill="#d4af37" font-family="Arial" font-size="14">22°C</text>
+  <!-- Alfombra -->
+  <rect x="50" y="400" width="700" height="80" rx="10" fill="#1a1a1a"/>
+  <!-- Detalles de lujo -->
+  <rect x="280" y="420" width="240" height="40" rx="5" fill="#d4af37" opacity="0.3"/>
+</svg>

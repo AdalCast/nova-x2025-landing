@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#1a1a1a"/>
+  <defs>
+    <linearGradient id="dashGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c2c2c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Tablero principal -->
+  <rect x="50" y="80" width="700" height="300" rx="20" fill="url(#dashGrad)"/>
+  <!-- Pantalla central 12" -->
+  <rect x="280" y="100" width="240" height="150" rx="10" fill="#000"/>
+  <rect x="285" y="105" width="230" height="140" rx="8" fill="#0a2540"/>
+  <!-- Contenido pantalla - Mapa -->
+  <rect x="290" y="110" width="220" height="100" fill="#0d3050"/>
+  <path d="M300 180 L350 150 L400 170 L450 140 L500 160" stroke="#d4af37" stroke-width="3" fill="none"/>
+  <circle cx="350" cy="150" r="5" fill="#d4af37"/>
+  <circle cx="450" cy="140" r="5" fill="#d4af37"/>
+  <!-- Info en pantalla -->
+  <rect x="290" y="215" width="70" height="25" rx="3" fill="#d4af37"/>
+  <rect x="370" y="215" width="70" height="25" rx="3" fill="#333"/>
+  <rect x="450" y="215" width="70" height="25" rx="3" fill="#333"/>
+  <!-- Panel de instrumentos izquierdo -->
+  <circle cx="150" cy="200" r="80" fill="#0a0a0a"/>
+  <circle cx="150" cy="200" r="70" fill="#1a1a1a" stroke="#d4af37" stroke-width="2"/>
+  <circle cx="150" cy="200" r="5" fill="#d4af37"/>
+  <!-- Velocímetro -->
+  <line x1="150" y1="200" x2="150" y2="140" stroke="#d4af37" stroke-width="3"/>
+  <text x="150" y="250" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12">km/h</text>
+  <!-- Panel de instrumentos derecho -->
+  <circle cx="650" cy="200" r="80" fill="#0a0a0a"/>
+  <circle cx="650" cy="200" r="70" fill="#1a1a1a" stroke="#d4af37" stroke-width="2"/>
+  <circle cx="650" cy="200" r="5" fill="#d4af37"/>
+  <!-- RPM -->
+  <line x1="650" y1="200" x2="680" y2="160" stroke="#d4af37" stroke-width="3"/>
+  <text x="650" y="250" text-anchor="middle" fill="#fff" font-family="Arial" font-size="12">RPM</text>
+  <!-- Volante -->
+  <ellipse cx="400" cy="420" rx="150" ry="60" fill="#2c2c2c"/>
+  <ellipse cx="400" cy="420" rx="130" ry="50" fill="#1a1a1a"/>
+  <ellipse cx="400" cy="420" rx="50" ry="20" fill="#2c2c2c"/>
+  <circle cx="400" cy="420" r="25" fill="#d4af37"/>
+  <!-- Controles del volante -->
+  <rect x="280" y="410" width="40" height="20" rx="5" fill="#333"/>
+  <rect x="480" y="410" width="40" height="20" rx="5" fill="#333"/>
+  <!-- Ventilación -->
+  <rect x="80" y="320" width="640" height="40" rx="10" fill="#2c2c2c"/>
+  <rect x="100" y="330" width="80" height="20" rx="5" fill="#333"/>
+  <rect x="200" y="330" width="80" height="20" rx="5" fill="#333"/>
+  <rect x="520" y="330" width="80" height="20" rx="5" fill="#333"/>
+  <rect x="620" y="330" width="80" height="20" rx="5" fill="#333"/>
+</svg>

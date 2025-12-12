@@ -1,0 +1,43 @@
+<!-- Header Navigation -->
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-brand">
+        <img src="assets/images/logo-nova.svg" alt="Nova Motors" class="logo">
+      </div>
+      
+      <ul class="nav-menu" [class.active]="isMenuOpen">
+        <li class="nav-item">
+          <a href="#hero" class="nav-link">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#specifications" class="nav-link">Especificaciones</a>
+        </li>
+        <li class="nav-item">
+          <a href="#gallery" class="nav-link">Galería</a>
+        </li>
+        <li class="nav-item">
+          <a href="#financing" class="nav-link">Financiamiento</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a href="tel:+525555123456" class="nav-link nav-phone">
+            📞 (55) 5512-3456
+          </a>
+        </li>
+      </ul>
+      
+      <button 
+        class="nav-toggle" 
+        (click)="toggleMenu()"
+        [attr.aria-expanded]="isMenuOpen"
+        aria-label="Toggle navigation menu">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+    </nav>
+  </div>
+</header>
